@@ -11,17 +11,20 @@ const Home = () => {
     const [foodName, setFoodName] = useState('');
     const [foodList, setFoodList] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    console.log(isLoading)
+
     const inputChangeHandler = event => {
         setFoodName(event.target.value)
     }
 
     const onSearchHandler = event => {
+        if(foodName === '') return;
         if (event.charCode === 13 || event.type === 'click') {
+            setFoodList([])
             setIsLoading(true)
             RecipeService.query(foodName).then((res) => {
-                setFoodList(food => food.concat(res.hits))
-                setIsLoading(false)
+                setFoodName('');
+                setFoodList(res.hits);
+                setIsLoading(false);
             }
             ).catch((err) => console.log(err))
         }
@@ -31,14 +34,14 @@ const Home = () => {
     return (
         <>
             <div className="search-bar">
-                <fieldset class="field-container">
-                    <input type="text" onKeyPress={onSearchHandler} placeholder="Search..." class="field" onChange={inputChangeHandler} />
+                <fieldset className="field-container">
+                    <input type="text" onKeyPress={onSearchHandler} placeholder="Search..." className="field" onChange={inputChangeHandler} />
                     <button className="search-btn" onClick={onSearchHandler}>Find!</button>
-                    <div class="icons-container">
-                        <div class="icon-search"></div>
-                        <div class="icon-close">
-                            <div class="x-up"></div>
-                            <div class="x-down"></div>
+                    <div className="icons-container">
+                        <div className="icon-search"></div>
+                        <div className="icon-close">
+                            <div className="x-up"></div>
+                            <div className="x-down"></div>
                         </div>
                     </div>
                 </fieldset>
@@ -46,7 +49,7 @@ const Home = () => {
 
             {/* <input type="text" placeholder="What food are you looking for?" onChange={inputChangeHandler} value={foodName} />
             <button onClick={onSearchHandler}>Search</button> */}
-            <div class="astrodivider"><div class="astrodividermask"></div><span><i><FontAwesomeIcon icon={faUtensils} /></i></span></div>
+            <div className="astrodivider"><div className="astrodividermask"></div><span><i><FontAwesomeIcon icon={faUtensils} /></i></span></div>
 
             <div className="card-layout">
                 {isLoading && (
@@ -55,7 +58,7 @@ const Home = () => {
 
                 {useMemo(() =>
                     foodList.map(food => (
-                        <Zoom>
+                        <Zoom key={food.recipe.calories}>
                             <Cards key={food.recipe.calories} foodList={food} />
                         </Zoom>
                     ))

@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <>
             <header>
-                <div class="overlay">
+                <div className="overlay">
                     <h1>delicious</h1>
                     <h3>Find Recipe For &nbsp;&nbsp;<strong>Anything!</strong></h3>
                     <span className="almost-title">almost</span>
