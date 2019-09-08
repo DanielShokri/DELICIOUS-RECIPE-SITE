@@ -1,8 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import RecipeService from './Services/RecipeService'
-import Cards from './Components/Cards'
+import RecipeService from './Services/RecipeService';
+import Cards from './Components/Cards';
 import { faUtensils } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Zoom from 'react-reveal/Zoom';
 
 
 const Home = () => {
@@ -54,10 +55,15 @@ const Home = () => {
 
                 {useMemo(() =>
                     foodList.map(food => (
-                        <Cards key={food.recipe.calories} foodList={food} />
+                        <Zoom>
+                            <Cards key={food.recipe.calories} foodList={food} />
+                        </Zoom>
                     ))
                     , [foodList])}
             </div>
+
+
+
         </>
     )
 
