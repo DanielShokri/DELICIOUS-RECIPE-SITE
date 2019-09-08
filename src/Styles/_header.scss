@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+//   background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+header .overlay {
+  width: 100%;
+  padding: 50px;
+  color: rgb(212, 211, 211);
+  text-shadow: 1px 1px 1px rgb(255, 0, 0);
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image:  url("https://i.imgur.com/F1jy0nZ.png");
+  /* Set a specific height */
+  height: 43vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  font-size: 4.5rem;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+
+.almost-title{
+    display: inline-block;
+    font-size: 11px;
+    transform: translate(36px, -66px) rotate(-14deg);
+    text-transform: capitalize; 
+}

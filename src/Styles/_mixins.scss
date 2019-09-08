@@ -1,0 +1,18 @@
+@mixin flex-center {
+  display: flex;
+  align-content: center;
+}
+
+@mixin font-size($size, $base: 16) {
+  font-size: ($size / $base) * 1rem;
+}
+
+@mixin border-top-radius($num) {
+    border-top-left-radius: $num;
+    border-top-right-radius: $num;
+}
+
+@mixin border-bottom-radius($num) {
+    border-bottom-left-radius: $num;
+    border-bottom-right-radius: $num;
+}

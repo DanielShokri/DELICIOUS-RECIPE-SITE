@@ -1,0 +1,214 @@
+// @import "./mixins";
+
+
+
+.card {
+  width:280px;
+  display: block;
+  margin: 60px 20px;
+  transition: .25s;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.32);
+  
+  &:hover {
+    cursor: pointer;
+    
+    .button-primary {
+      transform: translate(10px, 0);
+    }
+  }
+}
+
+.card-header {
+  height: 150px;
+  width: 100%;
+  padding: 15px;
+  width:100%;
+  background-size:cover;
+  color:#fff;
+  box-sizing: border-box;
+}
+
+.card-header--title {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.date {
+  font-size: 11px;
+  font-weight: 600;
+  color: grey;
+  margin-bottom: 15px;
+}
+
+.body-content {
+  font-size: 13px;
+  line-height: 2;
+}
+
+.button-primary {
+  border: none;
+  box-shadow: none;
+  font-family: inherit;
+  background-color:transparent;
+  color: blue;
+  font-size: 15px;
+  transition:.25s;
+  
+  i{
+    padding-right:4px;
+  }
+}
+
+
+.designer-link {
+  color:#fff;
+  text-align:center;
+  fon-size: 12px;
+  text-decoration: none;
+  display:block;
+}
+
+
+
+
+
+// img {
+// 	width: 100%;
+// 	height: 280px;
+// 	vertical-align: bottom;
+// }
+
+// .recipe-card {
+//   //   height: 330px;
+//   //   width: 300px;
+//   //   padding: 30px;
+//   //   box-sizing: border-box;
+//   //   background-color: #eee;
+//   //   @include flex-center();
+//   background: #FFF;
+//   margin: 4em auto;
+//   width: 90%;
+//   max-width: 320px;
+//   @include border-top-radius(5px);
+//   @include border-bottom-radius(5px);
+
+//   aside {
+//     position: relative;
+
+//     img {
+//       @include border-top-radius(5px);
+//     }
+//   }
+// }
+
+// article {
+//   padding: 1.25em 1.5em;
+
+//   ul {
+//     list-style: none;
+//     margin: 0.5em 0 0;
+//     padding: 0;
+//     li {
+//       display: inline-block;
+//       margin-left: 1em;
+//       line-height: 1em;
+//       &:first-child {
+//         margin-left: 0;
+//       }
+
+//       .icon {
+//         vertical-align: bottom;
+//       }
+
+//       span:nth-of-type(2) {
+//         margin-left: 0.5em;
+//         font-size: 0.8em;
+//         font-weight: 300;
+//         vertical-align: middle;
+//         color: #838689;
+//       }
+//     }
+//   }
+
+//   h2,
+//   h3 {
+//     margin: 0;
+//     font-weight: 300;
+//     font-size: em(16);
+//   }
+
+//   h2 {
+//     font-size: em(28);
+//     color: #222222;
+//   }
+
+//   h4 {
+//     font-size: em(15);
+//     color: #838689;
+//   }
+
+//   p {
+//     margin: 1.25em 0;
+//     font-size: em(13);
+//     font-weight: 400;
+//     color: #222222;
+
+//     span {
+//       font-weight: 700;
+//       color: #000000;
+//     }
+//   }
+
+//   .ingredients {
+//     margin: 2em 0 0.5em;
+//   }
+// }
+
+// .icon {
+//   display: inline;
+//   display: inline-block;
+//   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/recipe-card-icons.svg);
+//   background-repeat: no-repeat;
+// }
+
+// .icon-calories,
+// .icon-calories\:regular {
+//   background-position: 0 0;
+//   width: 16px;
+//   height: 19px;
+// }
+
+// .icon-clock,
+// .icon-clock\:regular {
+//   background-position: 0 -19px;
+//   width: 20px;
+//   height: 20px;
+// }
+
+// .icon-level,
+// .icon-level\:regular {
+//   background-position: 0 -39px;
+//   width: 16px;
+//   height: 19px;
+// }
+
+// .icon-play,
+// .icon-play\:regular {
+//   background-position: 0 -58px;
+//   width: 21px;
+//   height: 26px;
+// }
+
+// .icon-users,
+// .icon-users\:regular {
+//   background-position: 0 -84px;
+//   width: 18px;
+//   height: 18px;
+// }
