@@ -18,7 +18,6 @@ const Cards = props => {
             </header>
         )
     }
-    console.log(foodList)
     return (
         <div>
             <Flippy

@@ -17,7 +17,7 @@ const Home = () => {
     }
 
     const onSearchHandler = event => {
-        if(foodName === '') return;
+        if (foodName === '') return;
         if (event.charCode === 13 || event.type === 'click') {
             setFoodList([])
             setIsLoading(true)
