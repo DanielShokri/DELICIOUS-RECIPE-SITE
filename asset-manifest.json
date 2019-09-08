@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/DELICIOUS-RECIPE-SITE/static/css/main.3e21015d.chunk.css",
+    "main.js": "/DELICIOUS-RECIPE-SITE/static/js/main.2f42837c.chunk.js",
+    "main.js.map": "/DELICIOUS-RECIPE-SITE/static/js/main.2f42837c.chunk.js.map",
+    "runtime~main.js": "/DELICIOUS-RECIPE-SITE/static/js/runtime~main.0dd3c454.js",
+    "runtime~main.js.map": "/DELICIOUS-RECIPE-SITE/static/js/runtime~main.0dd3c454.js.map",
+    "static/css/2.c0851dc3.chunk.css": "/DELICIOUS-RECIPE-SITE/static/css/2.c0851dc3.chunk.css",
+    "static/js/2.bb25ddd2.chunk.js": "/DELICIOUS-RECIPE-SITE/static/js/2.bb25ddd2.chunk.js",
+    "static/js/2.bb25ddd2.chunk.js.map": "/DELICIOUS-RECIPE-SITE/static/js/2.bb25ddd2.chunk.js.map",
+    "index.html": "/DELICIOUS-RECIPE-SITE/index.html",
+    "precache-manifest.ffa96355dac58111237eaf20be8c2181.js": "/DELICIOUS-RECIPE-SITE/precache-manifest.ffa96355dac58111237eaf20be8c2181.js",
+    "service-worker.js": "/DELICIOUS-RECIPE-SITE/service-worker.js",
+    "static/css/2.c0851dc3.chunk.css.map": "/DELICIOUS-RECIPE-SITE/static/css/2.c0851dc3.chunk.css.map",
+    "static/css/main.3e21015d.chunk.css.map": "/DELICIOUS-RECIPE-SITE/static/css/main.3e21015d.chunk.css.map"
+  }
+}
